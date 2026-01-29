@@ -1,0 +1,87 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:418649180096:task-definition/studentperformance-task:1",
+    "containerDefinitions": [
+        {
+            "name": "studentperformance-container",
+            "image": "418649180096.dkr.ecr.us-east-2.amazonaws.com/studentperformance:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "studentperformance-container-8080-tcp",
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/studentperformance-task",
+                    "awslogs-create-group": "true",
+                    "awslogs-region": "us-east-2",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            },
+            "systemControls": []
+        }
+    ],
+    "family": "studentperformance-task",
+    "executionRoleArn": "arn:aws:iam::418649180096:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "MANAGED_INSTANCES",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2026-01-29T04:38:20.919Z",
+    "registeredBy": "arn:aws:iam::418649180096:root",
+    "enableFaultInjection": false,
+    "tags": []
+}
