@@ -119,10 +119,8 @@ The trained model is exposed via a **Flask web app** that allows users to:
 
 ## 🖼️ Application Screenshots
 
-```md
 ![Landing Page](screenshots/home.png)
 ![Prediction Form](screenshots/prediction_form.png)
-```
 
 ---
 
