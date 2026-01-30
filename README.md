@@ -132,6 +132,12 @@ The trained model is exposed via a **Flask web app** that allows users to:
   <img src="screenshots/prediction_form.png" width="800"/>
 </p>
 
+
+### Githuh Actions Workflow
+
+<p align="center">
+    <img src="screenshots/github_workflow.png" width="800"/>
+</p>
 ---
 
 ## End-to-End ML Workflow (How It Works)
