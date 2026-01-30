@@ -41,7 +41,7 @@ def predict_datapoint():
 if __name__=="__main__":
     
     #run this command to run the app in local on your machine using flask
-    #app.run(host="0.0.0.0", port=5001, debug=True)   #The host is 127.0.0.1:5001/predictdata or localhost by default
+    app.run(host="0.0.0.0", port=5001, debug=True)   #The host is 127.0.0.1:5001/predictdata or localhost by default
     
     #running this command to deploy and run web app on AWS EC2 instance
-    app.run(host="0.0.0.0", port=8080)
+    #app.run(host="0.0.0.0", port=8080)
