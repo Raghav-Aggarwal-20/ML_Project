@@ -1,11 +1,11 @@
-# 🎓 Student Exam Performance Predictor  
+# Student Exam Performance Predictor  
 **End-to-End Machine Learning Project | Data Science • MLOps • Cloud Deployment**  
 
 **Author:** Raghav Aggarwal  
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project demonstrates a **full, industry-style machine learning lifecycle** — from exploratory data analysis (EDA) and model experimentation to **production deployment using Docker, CI/CD, and AWS**.
 
@@ -16,14 +16,14 @@ This project is designed to reflect **real-world ML engineering practices** and 
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 
 Accurately estimating academic performance can help educators and institutions identify patterns, gaps, and areas of improvement early.  
 The goal of this project is to build a robust regression model that predicts a student's **Math exam score** using contextual and academic inputs.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** Kaggle – Student Performance in Exams  
   🔗 https://www.kaggle.com/datasets/spscientist/students-performance-in-exams  
@@ -40,7 +40,7 @@ The goal of this project is to build a robust regression model that predicts a s
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 EDA was conducted to:
 - Understand score distributions and feature relationships
@@ -60,7 +60,7 @@ notebook/1. EDA STUDENT PERFORMANCE.ipynb
 
 ---
 
-## 🧪 Modeling & Training
+## Modeling & Training
 
 ### Preprocessing
 - **Categorical features:** OneHotEncoder
@@ -84,7 +84,7 @@ notebook/1. EDA STUDENT PERFORMANCE.ipynb
 
 ---
 
-## 🏆 Model Performance Summary (Test Set)
+## Model Performance Summary (Test Set)
 
 | Model | R² Score |
 |------|----------|
@@ -104,7 +104,7 @@ notebook/1. EDA STUDENT PERFORMANCE.ipynb
 
 ---
 
-## 🌐 Web Application
+## Web Application
 
 The trained model is exposed via a **Flask web app** that allows users to:
 - Enter demographic and academic inputs
@@ -117,7 +117,7 @@ The trained model is exposed via a **Flask web app** that allows users to:
 
 ---
 
-## 🖼️ Application Screenshots
+## Application Screenshots
 
 ### Landing Page
 
@@ -134,7 +134,7 @@ The trained model is exposed via a **Flask web app** that allows users to:
 
 ---
 
-## ⚙️ End-to-End ML Workflow (How It Works)
+## End-to-End ML Workflow (How It Works)
 
 1. **EDA & Data Validation**  
    Understand distributions, correlations, and feature relevance.
@@ -163,7 +163,7 @@ The trained model is exposed via a **Flask web app** that allows users to:
 
 ---
 
-## ☁️ Deployment & MLOps Stack
+## Deployment & MLOps Stack
 
 - **Backend:** Flask
 - **ML:** scikit-learn, pandas, numpy
@@ -174,7 +174,7 @@ The trained model is exposed via a **Flask web app** that allows users to:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ML_Project/
@@ -203,7 +203,7 @@ ML_Project/
 
 ---
 
-## ▶️ Running Locally (Optional)
+## ▶Running Locally (Optional)
 
 ```bash
 docker build -t student-performance-app .
@@ -214,24 +214,4 @@ Access at: `http://localhost:8080`
 
 ---
 
-## 🔮 Future Improvements
 
-- Deploy inference UI on **Streamlit or Vercel** for easy public access
-- Add **model monitoring & logging**
-- Integrate **MLflow** for experiment tracking
-- Add unit tests and data validation checks
-- Extend prediction to multi-subject scoring
-
----
-
-## 📌 Key Takeaways (For Recruiters)
-
-- Demonstrates **end-to-end ML ownership**
-- Strong understanding of **data science + MLOps**
-- Production-style pipelines and deployment
-- Clean, interpretable modeling with solid evaluation
-- Real cloud infrastructure (AWS) + CI/CD automation
-
----
-
-✅ **This project reflects how machine learning systems are built, shipped, and operated in real-world environments.**
